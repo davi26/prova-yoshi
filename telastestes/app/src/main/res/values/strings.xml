@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">telas testes</string>
+    <string name="titulo_lista">Escolha um Perfil</string>
+    <string-array name="lista_perfil">
+        <item>Escola um Perfil</item>
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+</resources>

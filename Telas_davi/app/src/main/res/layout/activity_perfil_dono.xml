@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil_dono"
+    android:background="@mipmap/img_fundo">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_logo"
+        android:id="@+id/iv_logo"
+        android:layout_marginTop="65dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_info_dono"
+        android:layout_width="217dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="60dp"
+        android:text="Informações complementares DONO"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+    <EditText
+        android:id="@+id/et_cpf"
+        style="@style/input_wizard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="20dp"
+        android:hint="Digite seu CPF"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_dono"
+        />
+
+    <EditText
+        android:id="@+id/et_dt_nasc"
+        style="@style/input_wizard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="20dp"
+        android:hint="Data de nascimento"
+        android:inputType="date"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/et_cpf"
+        />
+
+    <EditText
+        android:id="@+id/et_sexo"
+        style="@style/input_wizard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="20dp"
+        android:hint="Sexo"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/et_dt_nasc"
+        />
+
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:id="@+id/bt_proximo"
+        style="@style/custom_button"
+        app:layout_constraintTop_toBottomOf="@+id/et_sexo"
+        app:layout_constraintLeft_toLeftOf="@+id/et_sexo"
+        android:layout_marginTop="105dp"
+        android:layout_marginLeft="160dp"
+        android:text="Próximo"
+        android:onClick="irHomeDono"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

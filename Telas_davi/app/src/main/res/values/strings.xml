@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Telas_davi</string>
+    <string name="titulo_lista">Escolha um Perfil</string>
+    <string-array name="lista_perfil">
+        <item>Escola um Perfil</item>
+        <item>Perfil Dono de Pet</item>
+        <item>Perfil Cuidador de Pet</item>
+    </string-array>
+</resources>

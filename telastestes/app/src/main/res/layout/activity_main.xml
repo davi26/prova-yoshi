@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/img_fundo"
+    >
+
+    <EditText
+        style="@style/input_wizard"
+        android:id="@+id/teste1"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:hint="ola mundo, bem vindo all pets"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <Button
+        style="@style/custom_button"
+        android:id="@+id/teste2"
+        app:layout_constraintTop_toBottomOf="@+id/teste1"
+        android:layout_width="190dp"
+        android:layout_height="58dp"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="356dp"
+        android:text="Eu sou burro"
+        android:textAllCaps="false"
+        />
+
+    <Spinner
+        android:id="@+id/teste3"
+        android:layout_width="178dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="12dp"
+        android:background="#ffffff"
+        android:entries="@array/lista_perfil"
+        android:prompt="@string/titulo_lista"
+        app:layout_constraintTop_toBottomOf="@+id/teste2"
+        tools:layout_editor_absoluteX="54dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
